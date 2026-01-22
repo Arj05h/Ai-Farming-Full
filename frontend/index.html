@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Farming Control Center</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">AI Farming Platform</p>
+          <h1>Connected insights for resilient farms.</h1>
+          <p class="subtitle">
+            Monitor sensors, translate data into action, and forecast yields with a unified
+            AI assistant.
+          </p>
+          <div class="actions">
+            <button class="primary" type="button">Start a field scan</button>
+            <button class="ghost" type="button">View field dashboards</button>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Today’s overview</h2>
+          <ul>
+            <li><span>Soil moisture</span><strong>32%</strong></li>
+            <li><span>Ambient temperature</span><strong>26°C</strong></li>
+            <li><span>Yield readiness</span><strong>82%</strong></li>
+          </ul>
+        </div>
+      </header>
+
+      <section class="grid">
+        <article>
+          <h3>Live sensor health</h3>
+          <p>Stream measurements across irrigation blocks, weather stations, and drones.</p>
+          <div class="metric">
+            <span>Active sensors</span>
+            <strong>128</strong>
+          </div>
+        </article>
+        <article>
+          <h3>AI recommendations</h3>
+          <p>Prioritized tasks align irrigation, nutrition, and scouting in one queue.</p>
+          <div class="metric">
+            <span>Open actions</span>
+            <strong>7</strong>
+          </div>
+        </article>
+        <article>
+          <h3>Yield forecast</h3>
+          <p>Track confidence bands and simulate yield outcomes by plot.</p>
+          <div class="metric">
+            <span>Next harvest</span>
+            <strong>4.8t/ha</strong>
+          </div>
+        </article>
+      </section>
+
+      <section class="panel">
+        <h2>Action queue</h2>
+        <div class="panel-grid">
+          <div>
+            <h4>Irrigation adjustment</h4>
+            <p>Increase block A by 30 minutes to recover moisture deficit.</p>
+          </div>
+          <div>
+            <h4>Fertilizer schedule</h4>
+            <p>Apply nitrogen booster within 48 hours for maize growth stage V6.</p>
+          </div>
+          <div>
+            <h4>Drone scouting</h4>
+            <p>Scan north plots for pest damage following rainfall event.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel analytics">
+        <h2>Yield simulation</h2>
+        <form class="forecast-form">
+          <label>
+            Crop
+            <input type="text" value="Maize" />
+          </label>
+          <label>
+            Area (ha)
+            <input type="number" value="25" />
+          </label>
+          <label>
+            Soil moisture (%)
+            <input type="number" value="32" />
+          </label>
+          <label>
+            Expected rain (mm)
+            <input type="number" value="18" />
+          </label>
+          <button type="button">Run forecast</button>
+        </form>
+      </section>
+
+      <footer>
+        <p>AI Farming Control Center • v1.0</p>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
